@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Pratikkuikel\LaravelMultitenancyImpersonate\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelMultitenancyImpersonateCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-multitenancy-impersonate';
 
     public $description = 'My command';
 
