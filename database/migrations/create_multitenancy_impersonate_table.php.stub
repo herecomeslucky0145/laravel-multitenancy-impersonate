@@ -8,10 +8,16 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('laravel_multitenancy_impersonate_table', function (Blueprint $table) {
+        /* This table goes in the landlord database */
+        Schema::create('impersonations', function (Blueprint $table) {
             $table->id();
 
-            // add fields
+            $table->unsignedBigInteger('impersonator_id');
+            $table->unsignedBigInteger('impersonated_user_id');
+            $table->string('domain')->nullable();
+            $table->string('auth_guard')->nullable();
+            $table->dateTime('impersonated_at')->nullable();
+            $table->dateTime('left_at')->nullable();
 
             $table->timestamps();
         });

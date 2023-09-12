@@ -17,6 +17,7 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 
 ## Installation
 
+## Things to configure before you impersonate 
 You can install the package via composer:
 
 ```bash
