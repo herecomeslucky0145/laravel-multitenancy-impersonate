@@ -14,6 +14,7 @@ return new class extends Migration
 
             $table->unsignedBigInteger('impersonator_id');
             $table->unsignedBigInteger('impersonated_user_id');
+            $table->string('token');
             $table->string('domain')->nullable();
             $table->string('auth_guard')->nullable();
             $table->dateTime('impersonated_at')->nullable();
