@@ -16,6 +16,7 @@ class ImpersonationService implements ImpersonationContract
     public function getMultitenancyType()
     {
         //  figure out a way to determing the single db or multi db setup
+        // what you gonna do after you figure it out?
     }
 
     public function impersonateUser(int $impersonator_user_id, int $impersonated_user_id, $token, $domain = null, $authGuard = null)
